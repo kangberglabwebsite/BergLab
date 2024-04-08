@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cutting-edge research in brain development and neurodevelopmental disorders at Kang/Berg Lab.">
+  <title>Kang/Berg Lab</title>
+  <link rel="icon" type="image/png" href="./img/logo2.png">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <style>
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    .navbar {
+      background-color: #0056b3; /* Dark blue background */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adds shadow for depth */
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important; /* Ensures high contrast text color */
+    }
+    .nav-link {
+      margin-right: 15px;
+      transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+    }
+    .nav-link:hover, .nav-link:focus {
+      background-color: #004494; /* Slightly darker blue on hover/focus */
+      border-radius: 5px; /* Rounded edges for hover/focus state */
+    }
+    section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f4f4f4 !important;
+    }
+    .member-card {
+      background: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .member-card img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .member-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .member-info {
+      font-size: 1rem;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .member-name {
+        font-size: 1.1rem;
+      }
+      .member-info {
+        font-size: 0.9rem;
+      }
+    }
+    .footer {
+      background-color: #333;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"> <!-- Adjusted for darker theme -->
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Kang/Berg Lab</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#members">Members</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pubs">Publications</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Join Us</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#photos">Photos</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#outreach">Outreach</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+</body>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explore cutting-edge research in brain development and neurodevelopmental disorders with the Kang/Berg Lab.">
+  <meta name="keywords" content="neuroscience, brain development, neurodevelopmental disorders, research lab, Kang/Berg Lab">
+  <meta name="author" content="Kang/Berg Lab">
+  <title>Kang/Berg Lab - Cutting-edge Neuroscience Research</title>
+  <link rel="icon" type="image/png" href="./img/logo2.png">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/scrolling-nav.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    #home {
+      padding: 100px 0;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #0056b3; /* Primary color for better visual hierarchy */
+    }
+
+    #home .lead {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #666; /* Slightly lighter text for improved readability */
+    }
+
+    #home #photo {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    }
+
+    @media (max-width: 768px) {
+      #home h2 {
+        font-size: 2rem;
+      }
+
+      #home .lead {
+        font-size: 1rem;
+      }
+
+      #home #photo {
+        width: 90%; /* Slightly larger photo for small screens */
+        border-radius: 4px; /* Adjusted for smaller screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="home" style="background-color: #e8f0fe; padding-top: 50px; padding-bottom: 50px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 mx-auto">
+          <h2 style="color: #0056b3; font-weight: 700; margin-bottom: 30px;">Unlocking the Mysteries of Brain Development</h2>
+          <p class="lead" style="font-size: 1.1rem; line-height: 1.8; color: #333;">Explore how the brain is formed during development through our cutting-edge research. We delve into neural stem cells and investigate the impact of genetic and environmental factors on their behavior. Leveraging advanced technologies like brain region-specific organoids, we uncover insights into human brain development. Join us in unraveling the complexities of the brain.</p>
+          <img src="./img/zebrabow2.png" id="photo" alt="Brain Development" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<section id="research" style="background-color: #f8f9fa; padding-top: 50px; padding-bottom: 50px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 mx-auto">
+        <h2 style="color: #0056b3; font-weight: 700; margin-bottom: 30px;">Research</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">Our research focuses on understanding brain development in both normal and pathological conditions. We employ cutting-edge techniques such as neural stem cell cultures, 3D-brain organoid and microglial assembloid culturing, combined with pharmacological and genetic editing.</p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">We aim to unravel fundamental concepts of brain development and investigate how genetic and environmental risk factors contribute to neurodevelopmental disorders.</p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">We are fortunate to collaborate with esteemed researchers including David Cyrus Mintz (Johns Hopkins, Baltimore), Jennifer Winter (University Medical Centre of the Johannes Gutenberg University), Bettina Platt, Gernot Riedel, Patrick Cao Huan, Lynda Erskine, and Martin Collinson (all from the University of Aberdeen).</p>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #333;">For the latest information on our projects and interests, please check out our <a href="#pubs" style="color: #007bff; text-decoration: none;">publications</a> or <a href="#contact" style="color: #007bff; text-decoration: none;">contact us</a> directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="members">
+<p> 
+  </p>
+<div>
+<style>
+    #photo {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 800px; /* Set the width of the image */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+</style>
+
+<center>
+    <img src="./img/Image.jpeg" id="photo" width="800">
+</center>
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+
+<section id="members" style="background-color: #f9f9f9; padding: 50px 0;">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #0056b3;">Lab Members</h2>
+
+    <h3 class="text-center mb-4">Principal Investigators</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/Picture_Eunchai.png" alt="Eunchai Kang" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Eunchai Kang</h4>
+          <p class="text-muted">Group Leader</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/tom.png" alt="Daniel A Berg" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Daniel A Berg</h4>
+          <p class="text-muted">Group Leader</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat structure for other categories like Postdocs, PhD Students, etc. with the provided names and images -->
+
+    <h3 class="text-center mt-5 mb-4">Postdocs</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/Delia.jpg" alt="Delia Ramirez" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Delia Ramirez, PhD</h4>
+          <p class="text-muted">Joined 2022</p>
+        </div>
+      </div>
+      <!-- Add more postdoc member cards as needed -->
+    </div>
+
+    <!-- Example for another category: PhD Students -->
+    <h3 class="text-center mt-5 mb-4">PhD Students</h3>
+    <div class="row justify-content-center">
+      <!-- Gaby Crawford -->
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/Gaby.jpg" alt="Gaby Crawford" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Gaby Crawford</h4>
+          <p class="text-muted">Joined 2023</p>
+        </div>
+      </div>
+      <!-- Do Hyeon Gim -->
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/DH.jpeg" alt="Do Hyeon Gim" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Do Hyeon Gim</h4>
+          <p class="text-muted">Joined 2022</p>
+        </div>
+      </div>
+ 
+      <!-- Muhammad Khan -->
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/muhammad.jpg" alt="Muhammad Khan" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Muhammad Khan</h4>
+          <p class="text-muted">Joined 2021</p>
+        </div>
+      </div>     
+<!-- Olivia Soper -->
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/Olivia.jpeg" alt="Olivia Soper" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Olivia Soper</h4>
+          <p class="text-muted">Joined 2021</p>
+        </div>
+      </div>
+      <!-- Mario Yanakiev -->
+      <div class="col-md-4 mb-4">
+        <div class="member-card text-center" style="padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="./img/Mario.jpg" alt="Mario Yanakiev" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4>Gaby Crawford</h4>
+          <p class="text-muted">Joined 2023</p>
+        </div>
+      </div>
+
+      <!-- Additional PhD students omitted for brevity -->
+    </div>
+
+    <div class="former-lab-members text-center mt-5">
+      <h3 class="mb-4">Former Lab Members</h3>
+      <p>Undergrad/masters project students</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">Mohammad Kahn,</li>
+        <li class="list-inline-item">Florence Roberts,</li>
+        <li class="list-inline-item">Georgia Hepburn</li>
+        <!-- Add more former members if necessary -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Publications</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        section#pubs {
+            padding: 50px 0;
+        }
+
+        .pub-category {
+            margin-bottom: 20px;
+        }
+
+        .pub-category h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .pub-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .pub-list-item {
+            margin-bottom: 15px;
+        }
+
+        .pub-list-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .pub-list-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="pubs" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Selected Publications</h2>
+
+                    <div class="pub-category">
+                        <h3>Organoids</h3>
+                        <ul class="pub-list">
+                            <li class="pub-list-item">F Ye, E Kang, C Yu, X Qian, F Jacob, C Yu, M Mao, RYC Poon, J Kim, et al. DISC1 regulates neurogenesis via modulating kinetochore attachment of Ndel1/Nde1 during mitosis. Neuron. 2017. <a href="https://www.sciencedirect.com/science/article/pii/S0896627317309789">Link</a></li>
+                            <li class="pub-list-item">X Qian, HN Nguyen, MM Song, C Hadiono, SC Ogden, C Hammack et al. Brain-region-specific organoids using mini-bioreactors for modeling ZIKV exposure. Cell. 2016. <a href="https://www.sciencedirect.com/science/article/pii/S0092867416304676">Link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="pub-category">
+                        <h3>Neurogenesis</h3>
+                        <ul class="pub-list">
+                            <li class="pub-list-item">DA Berg, Y Su, D Jimenez-Cyrus, A Patel, N Huang, D Morizet, et al. A Common Embryonic Origin of Stem Cells Drives Developmental and Adult Neurogenesis. 2019. Cell, April 28. <a href="https://www.sciencedirect.com/science/article/pii/S009286741930159X?via%3Dihub">Link</a></li>
+                            <!-- Add more publications -->
+                        </ul>
+                    </div>
+
+                    <div class="pub-category">
+                        <h3>Psychiatric Disorders</h3>
+                        <ul class="pub-list">
+                            <li class="pub-list-item">E Kang, J Song, Y Lin, J Park, JH Lee, Q Hussani, Y Gu, S Ge et al. Interplay between a mental disorder risk gene and developmental polarity switch of GABA action leads to excitation-inhibition imbalance. Cell Reports 2019. <a href="https://www.sciencedirect.com/science/article/pii/S2211124719309210">Link</a></li>
+                            <!-- Add more publications -->
+                        </ul>
+                    </div>
+
+                    <div class="pub-category">
+                        <h3>Neurotoxicity</h3>
+                        <ul class="pub-list">
+                            <li class="pub-list-item">J Neudecker, Xu, Thomas, Penberthy, Kang, Berg, O’Meara, Brambrink, Mintz. An Update on Preclinical Research in Anesthetic-Induced Developmental Neurotoxicity in Nonhuman Primate and Rodent Models Journal of Neurosurgical Anesthesiology (35), 104-113 2023. <a href="https://journals.lww.com/jnsa/Citation/2023/01000/An_Update_on_Preclinical_Research_in.18.aspx">Link</a></li>
+                            <!-- Add more publications -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<section id="contact" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-4">Join Our Team</h2>
+                <p class="lead">Are you passionate about unraveling the mysteries of human brain development?</p>
+                <p>We are constantly on the lookout for talented and motivated individuals to join our innovative research lab.</p>
+                <p>Whether you're a postdoctoral researcher seeking exciting opportunities or an undergraduate student looking for a stimulating summer project, we have something for you!</p>
+                <h3 class="mt-4">Postdoctoral Fellowships</h3>
+                <p>If you have a bold research vision and are seeking support for independent postdoctoral fellowships, we're here to help.</p>
+                <p>Explore funding opportunities such as the prestigious <a href="https://www.embo.org/funding-awards/fellowships/postdoctoral-fellowships">EMBO Long Term Fellowships</a>, <a href="https://royalsociety.org/grants-schemes-awards/grants/newton-international/">Newton International Fellowships</a>, <a href="https://wellcome.ac.uk/grant-funding/schemes/sir-henry-wellcome-postdoctoral-fellowships">Sir Henry Wellcome Postdoctoral Fellowships</a>, and more.</p>
+                <h3 class="mt-4">Undergraduate Opportunities</h3>
+                <p> If you're eager to delve into exciting research during the summer, we offer stimulating <a href="http://bsdb.org/awards/gurdon-studentships-for-summer-vacation-work/">summer studentships</a> through BSDB.</p>
+                          <p class="mt-4">Ready to join our team and contribute to groundbreaking research in neuroscience? Reach out to us:</p>
+        <ul class="list-unstyled">
+          <li>Email: Eunchai.kang[at]abdn.ac.uk</li>
+          <li>Email: Daniel.Berg[at]abdn.ac.uk</li>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Photos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Container holding the columns */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 -10px; /* Negative margin to compensate for column padding */
+    }
+
+    /* Style for each column */
+    .column {
+      flex: 0 0 calc(33.33% - 20px); /* Calculate column width with padding */
+      max-width: calc(33.33% - 20px); /* Calculate max width with padding */
+      padding: 10px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    /* Style for images */
+    .column img {
+      width: 100%;
+      height: 250px; /* Set a specific height for all images */
+      object-fit: cover; /* Ensure images cover the specified height without distortion */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for image cards */
+      cursor: pointer; /* Cursor pointer for clickable images */
+      transition: transform 0.3s ease; /* Smooth transition on hover */
+    }
+
+    /* Hover effect on columns */
+    .column:hover {
+      transform: scale(1.05); /* Scale up on hover */
+    }
+
+    /* Responsive layout */
+    @media screen and (max-width: 768px) {
+      .column {
+        flex: 0 0 calc(50% - 20px); /* Two columns per row on smaller screens */
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .column {
+        flex: 0 0 calc(100% - 20px); /* Single column on extra small screens */
+        max-width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+<section id="photos">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <h2 class="text-center mb-4">Lab Life in Pictures</h2>
+                <div class="gallery">
+                    <div class="row">
+                        <!-- First row of images -->
+                        <div class="col-sm-4 mb-4">
+                            <img src="./img/56462.jpg" alt="Snow" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4 mb-4">
+                            <img src="./img/56460.jpg" alt="Forest" class="img-fluid">
+                        </div>
+                        <div class="col-sm-4 mb-4">
+                            <img src="./img/56463.jpg" alt="Mountains" class="img-fluid">
+                        </div>
+                        <!-- Repeat the pattern for additional rows and images -->
+                    </div>
+
+            <div class="row mb-4">
+  <div class="col-sm-4">
+    <img src="./img/lab2.jpeg" alt="Lab" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/Lab picture20223.jpg" alt="Lab Team" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/anthony.jpg" alt="Lab Equipment" class="img-fluid">
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-sm-4">
+    <img src="./img/Lab fun 1 2022.jpg" alt="Lab Fun" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/Lab fun 2 2022.jpg" alt="Lab Activity" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/Lab fun 3 2022.jpg" alt="Lab Experiment" class="img-fluid">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="./img/Lab picture2022.jpg" alt="Lab Group" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/56495.jpg" alt="Lab Equipment Close-Up" class="img-fluid">
+  </div>
+  <div class="col-sm-4">
+    <img src="./img/Welcome1.jpg" alt="Welcome Sign" class="img-fluid">
+  </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach & Communications</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .column {
+      margin-bottom: 40px;
+    }
+
+    .column h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .column img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach & Communications</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      color: #0056b3; /* Primary color for consistency */
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700; /* Adds emphasis */
+    }
+
+    /* Styling adjustments for consistency across the site */
+    .column h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .column img, .video-container iframe {
+      border-radius: 8px; /* Rounded corners for all media */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      margin-bottom: 20px; /* Consistent bottom margin */
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 40px; /* Additional spacing below videos */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach & Communications</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      color: #0056b3; /* Primary color for consistency */
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700; /* Adds emphasis */
+    }
+
+    /* Styling adjustments for consistency across the site */
+    .column h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .column img, .video-container iframe {
+      border-radius: 8px; /* Rounded corners for all media */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      margin-bottom: 20px; /* Consistent bottom margin */
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 40px; /* Additional spacing below videos */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <section id="Outreach" class="bg-light pt-4 pb-4">
+    <div class="container">
+      <h2 class="section-title text-center">Outreach & Communications</h2>
+      <div class="row">
+        <!-- First Item -->
+        <div class="col-md-4 text-center">
+          <h5><a href="https://humaneresearch.org.uk/announcing-the-winner-of-the-les-rhoades-phd-studentship-award/" target="_blank">Congratulations to Eunchai for receiving the Les Rhoades PhD Studentship award</a></h5>
+          <img src="./img/HumaneEK.jpg" alt="Les Rhoades PhD Studentship" class="img-fluid mb-3">
+        </div>
+
+        <!-- Second Item -->
+        <div class="col-md-4 text-center">
+          <h5><a href="https://www.bbc.co.uk/bitesize/articles/z2t3ydm" target="_blank">Short essay on the discovery of Adult neurogenesis for BBC Bitsize</a></h5>
+          <img src="./img/BBC.jpg" alt="BBC Bitsize" class="img-fluid mb-3">
+        </div>
+
+        <!-- Third Item -->
+        <div class="col-md-4 text-center">
+          <h5><a href="https://www.youtube.com/watch?v=ShIjh6pAIgk&feature=emb_title" target="_blank">Adult neurogenesis talk for TechFest Aberdeen</a></h5>
+          <div class="video-container" style="margin-bottom: 20px;">
+            <iframe src="https://www.youtube.com/embed/ShIjh6pAIgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%; height: 200px;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mx-auto">
+      <div class="text-center">
+        <img src="./img/Lab picture2022.jpg" alt="Lab" class="img-fluid rounded shadow" style="max-width: 100%; height: auto; margin-bottom: 20px;" />
+        <p class="mt-3">Members of the Kang/Berg lab and friends at the beach in Aberdeen, Summer 2022</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="js/scrolling-nav.js"></script>
+
+<!-- Font Awesome icons -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+  © 2024 Kang/Berg Lab. All rights reserved.
+  <p>University of Aberdeen | Institute for Medical Sciences</p>
+  <p>Address: Institute of Medical Sciences, Aberdeen, AB25 2ZD, United Kingdom</p>
+</footer>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+</body>
+</html>
